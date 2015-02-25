@@ -1,3 +1,8 @@
+(** Signatures for a large class of theoretically useful
+    structures. See {{: http://github.com/tel/ocaml-cats}
+    tel/ocaml-cats} for more details. These will eventually be
+    exported to that package. *)
+
 open Types
 
 module type Covariant1 = sig
