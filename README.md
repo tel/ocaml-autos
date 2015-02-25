@@ -23,10 +23,10 @@ type recursion. In a pretend OCaml which has higher-kinded types and
 type lambdas
 
 ```ocaml
-type _ mu = Mu : 'x * ('x -> 'x 'f) -> 'f mu
+type _ nu = Nu : 'x * ('x -> 'x 'f) -> 'f nu
 
-type (-'a, +'b) mealy = ('a, 'b, _) istate mu
-type (-'a, +'b) moore = ('a, 'b, _) istore mu
+type (-'a, +'b) mealy = (('a, 'b, _) istate) nu
+type (-'a, +'b) moore = (('a, 'b, _) istore) nu
 ```
 
 or, written out explicitly
