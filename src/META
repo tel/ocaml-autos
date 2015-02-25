@@ -1,0 +1,11 @@
+# OASIS_START
+# DO NOT EDIT (digest: 588c57772d9d3630ad8cbd1a58c6a3dc)
+version = "0.1.0"
+description = "Automata, machines, and such ilk"
+archive(byte) = "autos.cma"
+archive(byte, plugin) = "autos.cma"
+archive(native) = "autos.cmxa"
+archive(native, plugin) = "autos.cmxs"
+exists_if = "autos.cma"
+# OASIS_STOP
+

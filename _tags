@@ -1,0 +1,23 @@
+# OASIS_START
+# DO NOT EDIT (digest: d1af9c98a090607a1011465b117b0b58)
+# Ignore VCS directories, you can use the same kind of rule outside
+# OASIS_START/STOP if you want to exclude directories that contains
+# useless stuff for the build process
+true: annot, bin_annot
+<**/.svn>: -traverse
+<**/.svn>: not_hygienic
+".bzr": -traverse
+".bzr": not_hygienic
+".hg": -traverse
+".hg": not_hygienic
+".git": -traverse
+".git": not_hygienic
+"_darcs": -traverse
+"_darcs": not_hygienic
+# Library autos
+"src/autos.cmxs": use_autos
+"src/moore.cmx": for-pack(Autos)
+"src/mealy.cmx": for-pack(Autos)
+"src/types.cmx": for-pack(Autos)
+"src/sigs.cmx": for-pack(Autos)
+# OASIS_STOP
