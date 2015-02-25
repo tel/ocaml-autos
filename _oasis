@@ -1,0 +1,28 @@
+OASISFormat: 0.4
+Name:        autos
+Version:     0.1.0
+Synopsis:    Automata, machines, and such ilk
+Authors:     Joseph Abrahamson <me@jspha.com>
+License:     BSD-3-clause
+Plugins:     META (0.4)
+
+Library autos
+  Path:       src
+  BuildTools: ocamlbuild
+  Pack:       true
+  Modules:    Moore, Mealy, Types, Sigs
+  
+AlphaFeatures: ocamlbuild_more_args
+Document autos_api
+  Type: ocamlbuild (0.4)
+  BuildTools: ocamlbuild, ocamldoc
+
+  Title: API reference for Autos
+  XOCamlbuildPath: .
+  XOCamlbuildExtraArgs:
+    "-docflags '-colorize-code -short-functors -charset utf-8'"
+  XOCamlbuildLibraries: autos
+
+SourceRepository autos
+  Type:     git
+  Location: https://github.com/tel/ocaml-autos
