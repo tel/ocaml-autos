@@ -1,0 +1,25 @@
+opam-version: "1.2"
+
+maintainer: "Joseph Abrahamson <me@jspha.com>"
+authors: [ "Joseph Abrahamson <me@jspha.com>" ]
+
+license: "BSD3"
+homepage: "https://github.com/tel/ocaml-autos"
+bug-reports: "https://github.com/tel/ocaml-autos/issues"
+dev-repo: "https://github.com/tel/ocaml-autos.git"
+
+tags: [
+  "automata"
+  "lazy"
+  "streams"
+  "machines"
+]
+
+build: [
+  ["./configure" "--prefix=%{prefix}%"]
+  [make]
+]
+build-doc: ["make doc"]
+install: [make "install"]
+remove: ["ocamlfind" "remove" "autos"]
+depends: "ocamlfind" {build}
