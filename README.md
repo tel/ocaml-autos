@@ -1,6 +1,8 @@
 Autos—Infinite state automatons
 ===============================
 
+[![Build Status](https://travis-ci.org/tel/ocaml-autos.svg)](https://travis-ci.org/tel/ocaml-autos)
+
 Theory
 ------
 
